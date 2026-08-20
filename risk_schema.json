@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HIVE Organizational Risk Record",
+  "type": "object",
+  "required": [
+    "machine_version",
+    "timestamp",
+    "project_id",
+    "risk_score",
+    "target"
+  ],
+  "properties": {
+    "machine_version": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "risk_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "target": {
+      "type": "string"
+    },
+    "interaction_stress": {
+      "type": "number"
+    },
+    "delivery_pressure": {
+      "type": "number"
+    },
+    "coordination_load": {
+      "type": "number"
+    }
+  }
+}

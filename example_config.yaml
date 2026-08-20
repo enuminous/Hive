@@ -1,0 +1,19 @@
+machine: HIVE-M1
+version: 1.0.0
+random_state: 23
+
+temporal_horizons:
+  - 1
+  - 3
+  - 7
+  - 12
+
+primary_metric:
+  name: brier_score
+  comparison: hive_vs_raw_kpi
+
+ethical_boundary:
+  prohibit_individual_employment_decisions: true
+
+freeze:
+  hash: sha256
